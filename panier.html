@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Unitrip</title>
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Bar de Navigation-->
+        <div class="nav">
+            <div class="logo">
+                <img src="./images/logo.png">
+                <a href="index.html">UNITRIP</a>
+            </div>
+            
+            <ul class="links">
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="index.html#flash">Ventes flash</a></li>
+                <li><a href="index.html#destination">Destinations</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="panier.html" class="action-button pannier">Panier</a>
+                <a href="connexion.html" class="action-button connexion">Connexion</a>
+
+            </div>
+        </div>
+        <!--Burger Menu-->
+        <div class="burger-button">
+        <input type="checkbox" id="burger-checkbox" class="input-burger-checkbox"/>
+        <label for="burger-checkbox" class="burger-button">☰</label>
+        
+        <nav class="burger-menu">
+            <ul class="links">
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="index.html#flash">Ventes flash</a></li>
+                <li><a href="index.html#destination">Destinations</a></li>
+            </ul>
+            <div class="divider"></div>
+            <div class=" buttons-burger-menu">
+                <a href="panier.html" class="action-button pannier">Panier</a>
+                <a href="connexion.html" class="action-button connexion">Connexion</a>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <section>
+        <div class="panier-logo">
+            <img src="images/panier_logo.png">
+        </div>
+        <div class="content">
+            <div class="item">
+                <div class="presentation">
+                    <h1>Allemagne</h1>
+                    <p>Choix de la destination</p>
+                    <div class="choix">
+                        <label for="Berlin">Berlin</label>
+                        <input type="radio" value="Berlin" name="destination">
+                        <label for="Munich">Munich</label>
+                        <input type="radio" value="Munich" name="destination">
+                        <label for="Cologne">Cologne</label>
+                        <input type="radio" value="Cologne" name="destination">
+                    </div>
+                </div>
+                <div class="infos">
+                    <p>275€</p>
+                    <p>3 jours</p>
+                </div>
+                <img class="photo" src="images/munich.png">
+            </div>
+    </section>
+    <a class="action-button commander">Commander</a>
+    <footer>
+        <div class="pied-de-page">
+            <p>Contact : support.unitrip@gmail.com</p>
+            <p>Ce site utilise des cookies. Tous droits réservés.</p>
+            <p>© 2025</p>
+        </div>
+    </footer>
+    </body>
+</html>

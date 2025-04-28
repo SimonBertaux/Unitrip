@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="./css/connexion.css">
+</head>
+
+<body>
+    <header>
+        <!--Bar de Navigation-->
+        <div class="nav">
+            <div class="logo">
+                <img src="./images/logo.png">
+                <a href="index.html">UNITRIP</a>
+            </div>
+            
+            <ul class="links">
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="index.html#flash">Ventes flash</a></li>
+                <li><a href="index.html#destination">Destinations</a></li>
+            </ul>
+            <div class=" buttons">
+                <a href="panier.html" class="action-button pannier">Panier</a>
+                <!--<a href="connexion.html" class="action-button connexion">Connexion</a>-->
+
+            </div>
+        </div>
+        <!--Burger Menu-->
+        <div class="burger-button">
+        <input type="checkbox" id="burger-checkbox" class="input-burger-checkbox"/>
+        <label for="burger-checkbox" class="burger-button">☰</label>
+        
+        <nav class="burger-menu">
+            <ul class="links">
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="index.html#flash">Ventes flash</a></li>
+                <li><a href="index.html#destination">Destinations</a></li>
+            </ul>
+            <div class="divider"></div>
+            <div class=" buttons-burger-menu">
+                <a href="panier.html" class="action-button pannier">Panier</a>
+                <a href="connexion.html" class="action-button connexion">Connexion</a>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <form method="post">
+        <div class="formcontent">
+            <label>Adresse mail :</label> <br>
+            <input type="mail" name="id"><br>
+            <label>Mot de passe :</label><br>
+            <input type="password" name="password" autocomplete="current-password" required><br>
+            <!-- Bouton Annuler (lien stylisé en bouton) -->
+            <div class = 'boutons-container1'><a href="./index.html" class="bouton">Annuler</a>
+            <div class = 'boutons-container2'><a href="./index.html" class="bouton-inscription">S'inscrire</a>
+            <!-- Bouton Se connecter (lien stylisé en bouton) -->
+            <a href="../index.html" class="bouton">Se connecter</a></div></div>
+        </div>
+    </form>
+</body>
+</html>

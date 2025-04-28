@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Unitrip</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Bar de Navigation-->
+            <div class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <a href="index.html">UNITRIP</a>
+                </div>
+                
+                <ul class="links">
+                    <li><a href="index.html">Présentation</a></li>
+                    <li><a href="index.html#flash">Ventes flash</a></li>
+                    <li><a href="index.html#destination">Destinations</a></li>
+                </ul>
+                <div class=" buttons">
+                    <a href="panier.html" class="action-button pannier">Panier</a>
+                    <a href="connexion.html" class="action-button connexion">Connexion</a>
+
+                </div>
+            </div>
+            <!--Burger Menu-->
+            <div class="burger-button">
+            <input type="checkbox" id="burger-checkbox" class="input-burger-checkbox"/>
+            <label for="burger-checkbox" class="burger-button">☰</label>
+            
+            <nav class="burger-menu">
+                <ul class="links">
+                    <li><a href="index.html">Présentation</a></li>
+                    <li><a href="index.html#flash">Ventes flash</a></li>
+                    <li><a href="index.html#destination">Destinations</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class=" buttons-burger-menu">
+                    <a href="panier.html" class="action-button pannier">Panier</a>
+                    <a href="connexion.html" class="action-button connexion">Connexion</a>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <section>
+            <div class="welcome">
+                <div class="background">
+                    <div class="content">
+                        <img src="./images/texte.png">
+                        <a href="#destination" class="action-button decouvrir">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <div id="flash" class="ventes-flash">
+                <h1>Ventes flash</h1>
+                <div class="contener">
+                    <div class="item" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/flash.png">
+                        <a href="./fiche_pays.html" class="action-button decouvrir flash-button">Découvrir</a>
+                    </div>
+                    <div class="item" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/flash.png">
+                        <a href="./fiche_pays.html" class="action-button decouvrir flash-button">Découvrir</a>
+                    </div>
+                    <div class="item" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/flash.png">
+                        <a href="./fiche_pays.html" class="action-button decouvrir flash-button">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <div id="destination" class="destination">
+                <h1>Où voulez-vous partir ?</h1>
+                <div class="contener">
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/munich.png">
+                        <h2>Allemagne</h2>
+                        <div class="fonds-noir-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="ask">
+                <h3>Sponso Ads</h3>
+                <div class="contener item-ask">
+                    <div class="item-destination" onclick="window.location.href='https://elric-dufresne-portfolio.vercel.app/'">
+                        <img src="./images/elric.png">
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/titouan.png">
+                    </div>
+                    <div class="item-destination" onclick="window.location.href='./fiche_pays.html'">
+                        <img src="./images/paul.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <div class="pied-de-page">
+                <p>Contact : support.unitrip@gmail.com</p>
+                <p>Ce site utilise des cookies. Tous droits réservés.</p>
+                <p>© 2025</p>
+            </div>
+        </section>
+        <section>
+            <div class="shrek">
+                <img src = "./images/Shrek.png">
+            </div>
+        </section>
+
+    </body>
+</html>

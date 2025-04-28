@@ -1,0 +1,251 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #342E3D;
+  }
+
+/* -------HEADER---------*/
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color : #fff;
+    font-size : 1 rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color :#ffBE5B;
+}
+
+header{
+    position: fixed; /*pour fixer la nav bar en haut de l'écran*/
+    top: 0;
+    left: 0;
+    right: 0;
+    padding : 0 2rem;
+    background-color:#716d77;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+.nav{
+    width: 100%;
+    height: 60px ;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo a{
+    font-size: 1.5rem;
+    font-weight:900;
+}
+.nav .logo img{
+    height: 60px;
+    width: 60px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .links {
+    display: flex;
+    gap : 2rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.action-button{     /*pannier et se connecter*/
+    background-color:#ffBE5B;
+    color:white;
+    border : 1px solid #ffBE5B;
+    padding : 0.5rem 1.2rem ;
+    border-radius : 5px ;
+    outline: none;
+    font-size : 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-button:hover{
+    color:#ffBE5B;
+    border : 1px solid #ffBE5B;
+}
+
+.pannier{
+    background-color: white;
+    color:#ffBE5B;
+    border : 1px #ffBE5B;
+}
+
+.pannier:hover{
+    background-color:#ffBE5B;
+    color :white;
+}
+
+.connexion:hover{
+    background-color:white;
+    color :#ffBE5B;
+}
+/* -------BURGER MENU---------*/
+
+.burger-menu{
+    display:none;  /*pas affiché de base*/
+    height: 300px;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px); /*floute l'arriere plan dans un rayon de 5px*/
+    border-radius: 10px; 
+    overflow: hidden; /*masque le contenu qui dépasse*/
+}
+
+.burger-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.divider {
+    height: 1px;
+    background-color: #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem ;
+    margin-top: 1rem;
+}
+
+.burger-menu .action-button {
+    width : 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.buttons-burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+.burger-button{
+    display:none;
+    position: absolute ;
+    top:10px;
+    right:10px;
+    color :#fff;
+    
+
+}
+.input-burger-checkbox{
+    visibility: hidden; /*invisible*/
+}
+
+#burger-checkbox:checked ~ .burger-menu { /*si la checkbox est activé, burger-menu est affiché*/
+    display: block; 
+}
+
+/*CONTENT*/
+
+section{
+    margin-top: 60px;
+}
+
+.panier-logo{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #716D77;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #444246;
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo{
+    display: flex;
+    border-radius: 30px;
+ 
+}
+
+/* -------PIED DE PAGE---------*/
+
+.pied-de-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    gap : 2px
+}
+.pied-de-page p{
+    margin: 0 0;
+}
+
+/* -------RESPONSIVE---------*/
+
+@media (max-width : 990px){
+    header{
+        background:none;
+        background-color: rgba(0,0,0,0.300);
+    }
+    .nav .links,
+    .nav .action-button{
+        display: none;
+    }
+    .burger-button{
+        display: block;
+    }
+}
