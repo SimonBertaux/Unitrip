@@ -363,17 +363,6 @@ h1{
 }
 
 
-/* -------SHREK---------*/
-
-.shrek{
-    height: 25px;
-    width: auto;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 10px;
-}
-
 /* -------RESPONSIVE---------*/
 
 @media (max-width : 990px){
