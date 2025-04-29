@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Unitrip</title>
+    <title>Unitrip - Panier</title>
     <link rel="stylesheet" href="css/panier.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/logo.png">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
                 <li><a href="index.html#flash">Ventes flash</a></li>
                 <li><a href="index.html#destination">Destinations</a></li>
             </ul>
-            <div class="buttons">
+            <div class=" buttons">
                 <a href="panier.html" class="action-button pannier">Panier</a>
                 <a href="connexion.html" class="action-button connexion">Connexion</a>
 
@@ -70,14 +71,55 @@
                 </div>
                 <img class="photo" src="images/munich.png">
             </div>
+            <div class="item">
+                <div class="presentation">
+                    <h1>Irlande</h1>
+                    <p>Choix de la destination</p>
+                    <div class="choix">
+                        <label for="Dublin">Dublin</label>
+                        <input type="radio" value="Dublin" name="destination">
+                        <label for="Belfast">Belfast</label>
+                        <input type="radio" value="Belfast" name="destination">
+                        <label for="Galway">Galway</label>
+                        <input type="radio" value="Galway" name="destination">
+                    </div>
+                </div>
+                <div class="infos">
+                    <p>645€</p>
+                    <p>6 jours</p>
+                </div>
+                <img class="photo" src="images\bison.jpg">
+            </div>
+            <div class="item">
+                <div class="presentation">
+                    <h1>Îles Canaries</h1>
+                    <p>Choix de la destination</p>
+                    <div class="choix">
+                        <label for="Tenerife">Tenerife</label>
+                        <input type="radio" value="Tenerife" name="destination">
+                        <label for="Lanzarote">Lanzarote</label>
+                        <input type="radio" value="Lanzarote" name="destination">
+                    </div>
+                </div>
+                <div class="infos">
+                    <p>550€</p>
+                    <p>4 jours</p>
+                </div>
+                <img class="photo" src="images\welcom.png">
+            </div>
     </section>
     <a class="action-button commander">Commander</a>
-    <footer>
+    <section>
         <div class="pied-de-page">
             <p>Contact : support.unitrip@gmail.com</p>
             <p>Ce site utilise des cookies. Tous droits réservés.</p>
             <p>© 2025</p>
         </div>
-    </footer>
+    </section>
+    <section>
+        <div class="shrek">
+            <img src = "./images/Shrek.png">
+        </div>
+    </section>
     </body>
 </html>
