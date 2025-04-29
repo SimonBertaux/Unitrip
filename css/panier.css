@@ -10,9 +10,13 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: #342E3D;
-  }
+}
 
 /* -------HEADER---------*/
+.burger-menu{
+    justify-content: center;
+    align-items: center;
+}
 
 li{
     list-style: none;
@@ -188,10 +192,21 @@ section{
     padding: 30px;
 }
 
+.panier-logo img {
+    width: 8em;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.panier-logo img:hover {
+    transform: translateY(-10px);
+  }
+
 .content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #716D77;
     margin-left: 5%;
     margin-right: 5%;
@@ -202,22 +217,98 @@ section{
     display: flex;
     justify-content: space-between;
     background-color: #444246;
+    align-items: center;
+    padding: 20px;
     border-radius: 30px;
     margin-top: 4%;
     margin-bottom: 4%;
-    margin-left: 6%;
-    margin-right: 6%;
+    width: 80%;
 }
 
 .presentation{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 20px;
+}   
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    color: #969696;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.4em;
+}
+
+.choix {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="radio"]{
+    accent-color: #FBB040;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 15px;
 }
 
 .photo{
     display: flex;
-    border-radius: 30px;
- 
+    border-radius: 10%;
+    width: 30%;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.photo:hover {
+    filter: brightness(60%);
+}
+
+.commander {
+    display: block;
+    margin: 0 auto;
+    width: 8em;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FBB040;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.commander:hover{
+    background-color:white;
+    color :#FBB040;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 768px) {
+    .panier-logo img {
+        width: 50px; /* Réduit la taille du panier sur mobile */
+    }
+    
+    .item {
+        flex-direction: column; /* Réorganise les éléments en colonne */
+        align-items: center;
+    }
+
+    .photo {
+        width: 80%; /* Agrandit l'image pour qu'elle soit plus visible */
+    }
 }
 
 /* -------PIED DE PAGE---------*/
@@ -232,6 +323,17 @@ section{
 }
 .pied-de-page p{
     margin: 0 0;
+}
+
+/* -------SHREK---------*/
+
+.shrek{
+    height: 25px;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
 }
 
 /* -------RESPONSIVE---------*/
